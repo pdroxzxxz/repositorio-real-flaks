@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 
 @app.route("/sobre")
-def sbobre():
+def sobre():
     return render_template("sobre.html")
 
 
