@@ -10,9 +10,7 @@ def index():
 
 
 
-from flask import Flask, render_template
 
-app = Flask(__name__)
 
 
 @app.route("/sobre")
@@ -23,9 +21,8 @@ def sobre():
 
 
 
-from flask import Flask, render_template
 
-app = Flask(__name__)
+
 
 
 @app.route("/ola/<nome>")
@@ -34,6 +31,9 @@ def ola(nome):
 
 
 
+@app.route("/idade/<int:idade>")
+def idade (idade):
+    return render_template("idade.html", idade=idade)
 
 
 
