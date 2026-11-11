@@ -31,13 +31,6 @@ def ola(nome):
 
 
 
-@app.route("/idade/<int:idade>")
-def idade (idade):
-    return render_template("idade.html", idade=idade)
-
-
-
-
 
 
 
