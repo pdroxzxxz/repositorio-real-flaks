@@ -28,7 +28,7 @@ app = Flask(__name__)
 
 @app.route("/ola/<nome>")
 def ola(nome):
-    return render_template("ola.html,nome=nome")
+    return render_template("ola.html, nome=nome")
 
 
 
